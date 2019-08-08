@@ -4,11 +4,12 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import { withRouter } from 'react-router-dom'
+import { logoutUser } from '../../ducks/reducer'
 
 class Nav extends Component {
   logout = () => {
     axios.delete('/auth/logout').then(() => {
-      
+      this.props.logoutUser()
       this.props.history.push('/')
     })
   }
@@ -41,4 +42,7 @@ function mapStateToProps(reduxState) {
   return { username }
 }
 
-export default connect(mapStateToProps)(withRouter(Nav))
+export default connect(
+  mapStateToProps,
+  { logoutUser }
+)(withRouter(Nav))

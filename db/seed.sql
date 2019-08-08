@@ -19,4 +19,3 @@ transfer_id SERIAL PRIMARY KEY,
 account_id INT REFERENCES account(account_id),
 transfer_type VARCHAR(20),
 transfer_ammount INT);
--- 

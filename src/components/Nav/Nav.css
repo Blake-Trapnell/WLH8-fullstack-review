@@ -4,3 +4,26 @@
     justify-content: center;
     align-items: center;
 }
+
+.Nav .spacer,
+.Nav .logo,
+.Nav .account-info {
+    flex: 1;
+}
+
+.Nav .logo .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 3rem;
+    background: radial-gradient(closest-side, #f3850f, #f3850f, rgb(240, 185, 45));
+}
+
+.Nav .logo a {
+    text-decoration: none;
+    color: black;
+}
