@@ -19,7 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(closest-side, rgb(240, 185, 45), #f3850f);
+    background: radial-gradient(closest-side, #f3850f, #f3850f, rgb(240, 185, 45));
     font-size: 10rem;
 }
 
